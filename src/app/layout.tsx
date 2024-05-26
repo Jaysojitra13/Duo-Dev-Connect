@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./provider";
 import Home from "./page";
 import { Header } from "./header";
+import CreateRoomPage from "./create-room/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <Header />
-          <Home />
+          {children}
         </Providers>
       </body>
     </html>
